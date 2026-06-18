@@ -1,4 +1,4 @@
-# Clpudflare Knowledge
+# Cloudflare Knowledge
 
 ## Index
 
