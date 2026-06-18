@@ -4,10 +4,10 @@
 
 ```text
 functions/
-  _middleware.js
+  _middleware.ts
 ```
 
-`functions/_middleware.js` は Cloudflare Pages Functions の middleware として動作する。  
+`functions/_middleware.ts` は Cloudflare Pages Functions の middleware として動作する。  
 Pages にデプロイすると、すべてのリクエストがこの middleware を通る。
 
 
@@ -23,3 +23,18 @@ Cloudflare Pages の環境変数に以下を設定する。
 
 Preview 環境だけで有効化したい場合は、Cloudflare Pages の環境変数を Preview 用に設定し、  
 Production では `BASIC_AUTH_ENABLED` を設定しない、または `1` 以外にする。
+
+
+## 型チェック
+
+依存パッケージをインストールする。
+
+```sh
+pnpm install
+```
+
+TypeScript の型チェックを実行する。
+
+```sh
+pnpm typecheck
+```
